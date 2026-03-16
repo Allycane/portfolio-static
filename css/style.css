@@ -279,17 +279,22 @@ a.header-menu-item.active {
 }
 
 .category-count {
+    position: absolute;
+    top: -20px;
+    right: 14px;
     background-color: var(--color-orange);
     color: var(--color-white);
     width: 28px;
     height: 28px;
     line-height: 28px;
     border-radius: 100%;
-    position: absolute;
-    top: -20px;
-    right: 14px;
     opacity: 0;
     transition: all 1000ms ease;
+}
+
+.category-btn:hover .category-count {
+    opacity: 1;
+    top: 0;
 }
 
 .category-btn:hover {
